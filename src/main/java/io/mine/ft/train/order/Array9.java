@@ -112,7 +112,8 @@ public class Array9 {
 //                while (i<j && vot>=keys[j])                //（降序）从后向前寻找较大值，不移动与基准值相等元素
 					j--;
 				if (i < j)
-					keys[i++] = keys[j]; // 子序列后端较小元素向前移动
+					keys[i++] =
+					keys[j]; // 子序列后端较小元素向前移动
 				while (i < j && keys[i] <= vot) // （升序）从前向后寻找较大值，不移动与基准值相等元素
 //                while (i<j && keys[i]>=vot)                //（降序）从前向后寻找较小值，不移动与基准值相等元素
 					i++;

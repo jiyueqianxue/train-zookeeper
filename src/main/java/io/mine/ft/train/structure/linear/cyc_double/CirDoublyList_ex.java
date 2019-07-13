@@ -48,8 +48,8 @@ public class CirDoublyList_ex<T>
     public CirDoublyList_ex(T[] values)                       //构造循环双链表，由values数组提供元素，尾插入
     {
         this();                                            //创建空循环双链表，只有头结点
-        DoubleNode<T> rear=this.head;
-        for (int i=0; i<values.length; i++)
+        DoubleNode<T> rear = this.head;
+        for (int i = 0; i < values.length; i++)
         {
             rear.next=new DoubleNode<T>(values[i], rear, this.head);   //尾插入
             rear = rear.next; 
@@ -251,10 +251,10 @@ public class CirDoublyList_ex<T>
     //在this循环双链表之后，合并连接list中所有结点，并设置list为空
     public void addAll(CirDoublyList_ex<T> list) 
     {
-        DoubleNode<T> rear=head.prev; 
+        DoubleNode<T> rear = head.prev; 
         rear.next = list.head.next;
         list.head.next.prev = rear;
-        rear=list.head.prev;
+        rear = list.head.prev;
         rear.next = this.head;
         this.head.prev = rear;
         list.head.prev = list.head; 
