@@ -3,21 +3,20 @@ package io.mine.ft.train.junit;
 import org.junit.Test;
 
 import io.mine.ft.train.BaseTest;
-import io.mine.ft.train.exception.BusinessException;
 
 public class PointAccServiceTest extends BaseTest {
 
 
 
 	@Test
-	public void findById() throws BusinessException {
+	public void findById() {
 
 		
 		//System.out.println(JsonUtil.toJson(infoPO));
 	}
 
 	@Test
-	public void findByBizIdAndAuditorName() throws BusinessException {
+	public void findByBizIdAndAuditorName() {
 		
 		//System.out.println(JsonUtil.toJson(list));
 	}
