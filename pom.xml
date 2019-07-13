@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mac</groupId>
-	<artifactId>train-data</artifactId>
+	<artifactId>train-zookeeper</artifactId>
 	<version>1.0.0</version>
-	<name>train-data</name>
+	<name>train-zookeeper</name>
 	<packaging>jar</packaging>
 	<description>测试练习</description>
 	<parent>
@@ -17,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<outputDirectory>./target</outputDirectory>
-		<finalName>train-data</finalName>
+		<finalName>train-zookeeper</finalName>
 		<webx-version>3.2.0</webx-version>
 	</properties>
 
@@ -157,22 +158,6 @@
 
 		<!-- ================================================= -->
 		<!-- Webx框架依赖 -->
-		<!-- ================================================= -->
-		<!-- <dependency>
-			<groupId>com.alibaba.citrus</groupId>
-			<artifactId>citrus-webx-all</artifactId>
-			<version>${webx-version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-codec</groupId>
-					<artifactId>commons-codec</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.codehaus.groovy</groupId>
-					<artifactId>groovy-all</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency> -->
 
 		<dependency>
 			<groupId>com.jcraft</groupId>
@@ -180,6 +165,11 @@
 			<version>0.1.50</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
